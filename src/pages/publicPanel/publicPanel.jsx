@@ -1,7 +1,9 @@
 import './panel.css';
+import {useSenha} from '../../components/senhas.jsx';
+
 
 function Panel(){
-
+    const { senhaAtual } = useSenha(); 
     return(
         <>
         <div className="panel-container">
@@ -12,11 +14,11 @@ function Panel(){
             <div className="current-call">
                 <div className="call-item ">
                     <span className="call-label">Senha:</span>
-                    <span id="current-ticket" className="ticket-display ticket-sp">251122-SP01</span>
+                    <span id="current-ticket" className="ticket-display ticket-sp">{senhaAtual|| '---'}</span>
                 </div>
                 <div className="call-item ">
                     <span className="call-label">Guichê:</span>
-                    <span id="current-counter" className="counter-display">03</span>
+                    <span id="current-counter" className="counter-display">1</span>
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
-import { useState } from "react";
+import {useSenha} from '../../components/senhas.jsx';
 import './attendantStyles.css';
 function Attendant(){
+    const { senhaAtual, tipoSenha } = useSenha(); 
     return (
         <>
         <div className="guiche-container">
@@ -30,9 +31,9 @@ function Attendant(){
             <h2>Serviço de Atendimento (SA)</h2>
             <div className="current-service">
                 <p>Senha Atual:</p>
-                <p className="service-ticket ticket-sp">251122-SP06</p>
+                <p className="service-ticket ticket-sp">{senhaAtual || 'Aguandando Senha'}</p>
                 <div className="service-details">
-                    <span>Tipo: <strong> Prioritária (SP)</strong> &nbsp;</span>
+                    <span>Tipo: <strong> {tipoSenha || 'N/A'}</strong> &nbsp;</span>
                     <span>Início SA: 14:38:00</span>
                     <span>Tempo Médio Esperado (TM): 15 min </span>
                 </div>

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Totem from './pages/clientTotem/clientTotemPage.jsx';
 import Attendant from './pages/attendant/attendantPage.jsx';
 import Panel from './pages/publicPanel/publicPanel.jsx';
+import { SenhaProvider } from './components/senhas.jsx';
 
 function App() {
   return (
@@ -27,5 +28,6 @@ function App() {
     </BrowserRouter>
   );
 }
+
 
 export default App;
