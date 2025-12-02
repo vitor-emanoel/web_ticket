@@ -1,0 +1,83 @@
+
+
+.totem-container {
+    width: 90%;
+    max-width: 800px;
+    padding: 40px;
+    background-color: #1c2b45;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    text-align: center;
+}
+
+h1 {
+    color: #004a8f; /* Cor UNINASSAU (exemplo) */
+    margin-bottom: 10px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.ticket-button {
+    padding: 30px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.3;
+}
+
+.ticket-button:hover {
+    transform: translateY(-5px);
+    opacity: 0.95;
+}
+
+.type-code {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.type-desc {
+    font-size: 0.8em;
+    font-weight: normal;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.priority { background-color: #e74c3c; } /* Vermelho para Prioridade (SP) */
+.exams { background-color: #2ecc71; } /* Verde para Exames (SE) */
+.general { background-color: #3498db; } /* Azul para Geral (SG) */
+
+.confirmation-message {
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px dashed #fcfcfc;
+    background-color: #3d4e67;
+    border-radius: 10px;
+}
+.confirmation-message h2{
+    color: #84a5ff;
+}
+
+.ticket-number {
+    font-size: 3em;
+    color: #84a5ff;
+    font-weight: 900;
+    margin: 10px 0;
+}

@@ -1,0 +1,102 @@
+
+
+.panel-container {
+    width: 95%;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #4dc2ff; /* Destaque */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4dc2ff;
+    padding-bottom: 10px;
+}
+
+.call-section {
+    background: #1c2b45;
+    padding: 30px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 1.8em;
+    color: #fddb3a;
+    margin-bottom: 20px;
+}
+
+.current-call {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.call-item {
+    padding: 20px;
+    background: #004a8f;
+    border-radius: 8px;
+    min-width: 30vW;
+    
+}
+
+.call-label {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.ticket-display {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.counter-display {
+    font-size: 4em;
+    font-weight: bold;
+    color: #fddb3a;
+}
+
+
+/* Seção de Histórico */
+.history-section {
+    background: #1c2b45;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.history-table th, .history-table td {
+    padding: 12px;
+    border-bottom: 1px solid #3d5a80;
+    font-size: 1.1em;
+}
+
+.history-table th {
+    background-color: #004a8f;
+    color: white;
+    font-weight: normal;
+}
+
+.history-table td {
+    color: #c9d6e5;
+}
+
+/* Cores para os tipos de senha no histórico */
+.ticket-sp { color: #e74c3c; font-weight: bold; }
+.ticket-se { color: #2ecc71; font-weight: bold; }
+.ticket-sg { color: #3498db; font-weight: bold; }
+
+.footer-info {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #6c757d;
+}

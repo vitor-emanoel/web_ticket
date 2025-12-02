@@ -1,0 +1,153 @@
+
+.guiche-container {
+    max-width: 1100px;
+    margin: 30px auto;
+    background: #1c2b45;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Header/Identificação */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #004a8f;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.guiche-info span, .time-info span {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-right: 20px;
+}
+
+.time-info strong {
+    font-size: 1.3em;
+    color: #e74c3c;
+}
+
+/* Painel de Ação */
+.action-panel, .service-panel, .log-section {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #1c2b45;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    color: #004a8f;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.main-action-button {
+    width: 100%;
+    padding: 18px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    background-color: #27ae60; /* Verde para Chamar */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 15px;
+}
+
+.main-action-button:hover {
+    background-color: #2ecc71;
+}
+
+.queue-status {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #eaf3ff;
+    border-radius: 4px;
+}
+
+.queue-item {
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.sp { color: #e74c3c; } /* Prioritária */
+.se { color: #2ecc71; } /* Exames */
+.sg { color: #3498db; } /* Geral */
+
+/* Painel de Serviço */
+.current-service {
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #fddb3a;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: #fff9e6;
+}
+
+
+.service-ticket {
+    font-size: 3em;
+    font-weight: 900;
+    margin: 5px 0;
+}
+
+.service-details {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.time-tracking {
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.service-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.service-button {
+    flex: 1;
+    padding: 12px;
+    font-size: 1.1em;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+.current-service p{
+    color: #1c2b45;
+}
+
+
+.finish { background-color: #3498db; }
+.discard { background-color: #95a5a6; }
+
+.finish:hover { background-color: #2980b9; }
+.discard:hover { background-color: #7f8c8d; }
+
+/* Log Section */
+.log-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.log-section li {
+    padding: 8px;
+    margin-bottom: 5px;
+    border-left: 5px solid #004a8f;
+    font-size: 0.9em;
+}
